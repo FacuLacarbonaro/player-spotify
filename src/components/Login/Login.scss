@@ -1,0 +1,22 @@
+@import '../../assets/colors/colors.scss';
+
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:$primary-color ;
+
+    img{
+        width: 100%;
+
+    }
+
+    a{
+        padding: 20px;
+        border-radius: 99px;
+        background-color: #1B1D2B ;
+        color: #D77A1D;
+        font-weight: 800;
+        text-decoration: none;
+    }
+}
