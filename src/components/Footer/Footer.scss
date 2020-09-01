@@ -1,10 +1,87 @@
 @import "../../assets/colors/colors.scss";
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   height: 65px;
-  width: 100%;
+  width: 97%;
   padding: 20px;
-  background-color: black;
+  background-color: #282828;
+
+  &__left{
+    flex: .3;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+
+
+
+    &__albumLogo{
+      height: 60px;
+      width: 60px;
+      margin-right: 20px;
+      object-fit: contain;
+    }
+
+    &__songInfo{
+
+      h4{
+        margin-bottom: 5px;
+      }
+
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__center{
+    flex: .4;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+
+    &__icon{
+
+      cursor: pointer;
+
+      &:hover{
+        transition: transform .2s ease-in-out;
+        transform: scale(1.2) !important;
+      }
+    }
+
+    &__orange{
+      color: $orange-color;
+      cursor: pointer;
+
+      &:hover{
+        transition: transform .2s ease-in-out;
+        transform: scale(1.2) !important;
+      }
+    }
+  }
+
+  &__right{
+    flex: .3;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+
+    .MuiSlider-root{
+     color: $orange-color; 
+    }
+
+
+  }
+  
 }
